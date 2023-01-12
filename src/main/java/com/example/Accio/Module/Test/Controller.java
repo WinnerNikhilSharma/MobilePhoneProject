@@ -11,7 +11,7 @@ public class Controller {
     Services service;
 
     @GetMapping("/get-user-name/{number}")
-    public String getPhoneNumber (@PathVariable String number){
+    public String getNumber (@PathVariable String number){
         return service.getPhoneNumber(number);
     }
 
